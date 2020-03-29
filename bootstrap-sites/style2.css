@@ -1,0 +1,63 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    width: 100vw;
+    box-sizing: border-box;
+}
+figure{
+    display: flex;
+    width: 90vw;
+
+}
+.carousel-item{
+    height: 100vh;
+}
+.carousel-caption{
+    text-shadow: 3px 2px black;
+}
+footer{
+    width: 100vw;
+    height: 5vh;
+    background-color: seashell;
+    color: goldenrod;
+    position: static;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#featlist{
+    display: flex;
+    justify-content: space-evenly;
+}
+section{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+#products{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card{
+    padding: 20px;
+    margin-bottom: 2em;
+    height: 75vh;
+}
+
+#pageEnd{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 20px
+}
+h2{
+    margin: 1em;
+    font-size: 3em;
+}

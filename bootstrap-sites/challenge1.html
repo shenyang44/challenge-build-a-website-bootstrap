@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Hello World Inc.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="mailto:shenyang_zx@hotmail.com?Subject=Enquiry">Send an
+                                email</a>
+                            <a class="dropdown-item"
+                                href="https://www.facebook.com/getschooledbynextacademy/">Facebook</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="" data-toggle="modal" data-target="#contactModal">Contact
+                                Form</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./pics/boot1.jpg" class="d-block w-100" alt="is a doggo">
+                </div>
+                <div class="carousel-item">
+                    <img src="./pics/boot2.jpg" class="d-block w-100" alt="cute doggo">
+                </div>
+                <div class="carousel-item">
+                    <img src="./pics/boot3.jpg" class="d-block w-100" alt="good doggo">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <div class="jumbotron jumbotron-fluid bg-dark text-light">
+        <div class="container">
+            <h1 class="display-4">Welcome to HelloWorld Incorporated</h1>
+            <p class="lead">Where code meets cleanliness.</p>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <h1>Latest Products</h1>
+            <div class="row">
+                <div class="mx-auto card shadow" style="width: 22rem;">
+                    <img class="card-img-top" src="./pics/shampoo1.jpg" alt="shampoo">
+                    <div class="card-body">
+                        <h5 class="card-title">HelloWorld Coders Shampoo</h5>
+                        <p class="card-text">Been staring at your code for too long and scratching your head wondering
+                            how to solve the problem, well maybe the answer has been staring you in the face the whole
+                            time. Try HelloWorld coders shampoo today!</p>
+                        <small>* Results observed after 10 weeks of use.</small>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cartModal">Buy
+                                now!</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mx-auto card shadow" style="width: 22rem;">
+                    <img class="card-img-top" src="./pics/conditioner1.webp" alt="conditioner">
+                    <div class="card-body">
+                        <h5 class="card-title">HelloWorld Coders Conditioner</h5>
+                        <p class="card-text">What's the use of having soft coders fingers from all that coding if you
+                            don't have soft hair to match? Well worry not as HelloWorld Coder Conditioner is here to
+                            dave the day. Try it now, your fingers and your hair will love you for it.</p>
+                        <small>* Results also observed after 10 weeks of use.</small>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cartModal">Buy
+                                now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto card shadow" style="width: 22rem;">
+                    <img class="card-img-top" src="./pics/facewash1.jpg" alt="facewash">
+                    <div class="card-body">
+                        <h5 class="card-title">HelloWorld Coders Facewash</h5>
+                        <p class="card-text">Bugs stress you out and unexpected CSS behaviour can cause extreme
+                            perspiration. Make sure you use HelloWorld Coders Facewash to wash away those worries and
+                            keep your face just as clean as your code. What are you waiting for?</p>
+                        <small>* Results shown after 5 washes per day.</small>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cartModal">Buy
+                                now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <article class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mt-4">
+                <div class="shadow card">
+                    <div class="card-body">
+                        <h2 class="card-title"><a id="about"></a> About Us!</h2>
+                        <img src=" ./pics/factory.jpg" class="card-img-top" alt="factory">
+                        <p class="mt-2 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non autem
+                            soluta
+                            assumenda saepe sed quos similique a, doloremque maiores sint ea laudantium! A eveniet
+                            ea
+                            iste inventore facilis dicta modi accusantium fugiat debitis reprehenderit voluptatum,
+                            numquam consequatur quidem distinctio labore sed est quasi eius nihil. Facilis
+                            consequatur
+                            laboriosam magnam aperiam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <figure class="col-lg-6 col-md-12 mt-2">
+                <h2 class="col-lg-6 col-md-12">Meet The Team</h2>
+                <div class="row row-cols-1 row-cols-md-2 mt-4">
+                    <div class="col mb-3">
+                        <div class="card shadow">
+                            <img src="./pics/abott@adorable.png"
+                                class="d-block mx-auto card-img-top rounded-circle w-75" alt="...">
+                            <div class="card-body">
+                                <h6 class="text-center card-title">Abott - Founder</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card shadow">
+                            <img src="./pics/john@adorable.png" class="d-block mx-auto card-img-top rounded-circle w-75"
+                                alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title text-center">John - CEO</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card shadow">
+                            <img src="./pics/alice@adorable.png"
+                                class="d-block mx-auto card-img-top rounded-circle w-75" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title text-center">Alice - Line Manager</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card shadow">
+                            <img src="./pics/steve@adorable.png"
+                                class="d-block mx-auto card-img-top rounded-circle w-75" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title text-center">Steve - Head of Sales</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </article>
+    <hr>
+    <section class="container-fluid">
+        <div class="row">
+            <figure class="col-lg-6 col-md-12">
+                <h2><a id="products"></a> Our Products</h2>
+                <div class="card-deck row ">
+                    <div class=" card shadow col-lg-6 mx-3 col-md-12 mt-2 h">
+                        <div class="card-body">
+                            <img src="./pics/shampoo2.png" class="card-img-top" alt="...">
+                            <h6 class=" mt- 4card-title text-center">Shampoo</h6>
+                        </div>
+                    </div>
+                    <div class="card shadow col-lg-6 mx-3 col-md-12 mt-2">
+                        <div class="card-body">
+                            <img src="./pics/conditioner2.jpg" class="card-img-top" alt="...">
+                            <h6 class="card-title text-center">Conditioner</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck row">
+                    <div class="card shadow col-lg-6 mx-3 col-md-12 mt-2">
+                        <div class="card-body">
+                            <img src="./pics/facewash2.jpg" class="card-img-top" alt="...">
+                            <h6 class="card-title text-center">Face Wash</h6>
+                        </div>
+                    </div>
+                    <div class="card shadow col-lg-6 mx-3 col-md-12 mt-2">
+                        <div class="card-body">
+                            <img src="./pics/webappsicon.png" class="card-img-top" alt="...">
+                            <h6 class="card-title text-center">Web Apps</h6>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <article class="col-lg-6 col-md-12 mt-2">
+                <div class="shadow card">
+                    <div class="card-body">
+                        <h2 class="card-title"> Our Promise</h2>
+
+                        <img src="./pics/thumbs-up-sign_emoji.png" class="card-img-top" alt="thumbs up sign">
+
+                        <p class="mt-2 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Doloremque
+                            atque molestias fugit ea adipisci sed rerum cupiditate ipsum inventore, consectetur,
+                            fuga
+                            doloribus nobis odit! Quas excepturi, perspiciatis culpa maxime ex neque totam rem,
+                            atque
+                            facere quaerat corrupti eligendi, aliquid omnis veniam assumenda reprehenderit fugit! Ab
+                            sed
+                            incidunt vitae necessitatibus voluptates, a reprehenderit fugit est, placeat dolor illum
+                            quae atque. Cupiditate inventore, sed a corporis illum non maxime assumenda error in!
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light text-center">
+        Copyright HelloWorld Inc 2019
+    </footer>
+    <!-- Modal for shopping cart. -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Shopping Cart:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Product Name:</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>HelloWorld Coders Shampoo</td>
+                                <td>RM150.00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>HelloWorld Coders Conditioner</td>
+                                <td>RM150.00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>HelloWorld Coders Face Wash</td>
+                                <td>RM200.00</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Total: RM500.00</h2>
+                </div>
+                <div class="modal-footer">
+                    <button style="background-color: #dc3545" ; type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Cancel</button>
+                    <button style="background-color: #28a745" ; type="button" class="btn btn-primary">Confirm
+                        Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for contact form -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="emailInput">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName">Full name</label>
+                            <input type="text" class="form-control" id="fullName">
+                        </div>
+                        <div class="form-group">
+                            <label for="selection">Enquiry Type</label>
+                            <select class="custom-select" id='selection'>
+                                <option selected>General</option>
+                                <option value="1">General</option>
+                                <option value="2">Job Offer</option>
+                                <option value="3">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" class="form-control" rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss='modal'>Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
